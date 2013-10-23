@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title> University Of Windsor Book Trade Search</title>
+</head>
+
+<body>
+	<h1> Search Catalog </br> U of W</h1>
+	
+	<form action="results.php" method="post">
+		Choose Search Type:<br/>
+		<select name="searchtype">
+			<option value ="author">Author</option>
+			<option value="title">Title</option>	
+			<option value="isbn">ISBN</option>
+		</select>
+		<br/>
+		Enter Search Query:<br/>
+		<input name="searchterm" type="text" size="40">
+		<br/>
+		<input type="submit" name="submit" value="Search"/>
+	</form>
+</body>
+
+</html>
