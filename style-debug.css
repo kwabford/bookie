@@ -1,0 +1,154 @@
+html, body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, p {
+margin: 0px;
+padding: 0px;
+}
+
+body {
+font-size: 100%;
+font-family: sans-serif;
+background-color: #CCC;
+/*background-image: url(pixie_bg.svg);*/
+color: #000;
+}
+
+#bg_overlay {
+/*background-color: #F00;*/
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
+
+li {
+list-style-type: none;
+}
+
+#header {
+  background-color: #000;
+  width: 100%;
+  padding: 3px;
+}
+
+#header a{
+  color: #FFF;
+  text-decoration: none;
+}
+
+#menu{
+  float: right;
+}
+
+h3 {
+  color: #FFF;
+}
+
+#footer {
+  color: #FFF;
+  background-color: #000;
+  width: 100%;
+  float: left;
+  margin: 3px;
+}
+
+.thumb {
+  margin: 2px;
+  float: left;
+  width: 200px;
+  height: 200px;
+  /*background-color: #0FF;*/
+  background-size: cover;/**/
+  /*background-size: 200px auto;/**/
+}
+
+.form_buttons {
+  display: inline-block;
+  width: 100%;
+}
+
+.imgWrapper {
+  float: left;
+  /*max-width: 500px;*/
+  width: 100%;/* 600px;*/
+  margin: 2px;
+  /*background-color: #0FF;
+  height: 600px;
+  */
+  text-align: center;
+  vertical-align: middle;
+}
+
+.private {
+  float: right;
+  z-index: 10;
+  color: #FFF;
+  background-color: #000;
+}
+
+.imgWrapper img {
+  margin-right:auto;
+  margin-left:auto;
+  max-height: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  /*width:100%;/**/
+  /*object-fit: cover;
+  background-color: #F00;*/
+}
+
+.error {
+  color: #900;
+  background-color: #FFF;
+  padding: 3px;
+}
+
+.success {
+  color: #090;
+  padding: 3px;
+  background-color: #FFF;
+}
+    
+#comments {
+  float: right;
+  width: 100%;/*410px;*/
+  height: 600px;
+  margin: 2px;
+  padding: 5px;
+  /*background-color:rgba(254,254,254,0.5); /* #0F0;*/
+}
+
+#pagewrapper
+{
+display: block;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left: auto;
+margin-right: auto;
+max-width: 1024px;
+/*position: absolute;
+top: 0;
+left: 0;*/
+z-index: 1;
+}
+
+#contentwrapper
+{
+width: 100%;
+margin-left: -10em;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+#content
+{
+display: block;
+min-height: 85%;
+}
+
+#contentwrapper
+{
+float: right;
+clear: right;
+}

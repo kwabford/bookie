@@ -3,22 +3,12 @@ session_start();
 header('Content-Type: text/html');
 
 require_once('libs.php');
+require_once('lib.php');
 session_destroy();
-?>
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<title>Team Delta </title>
-	<link rel="stylesheet" href="styler.css" />
-</head>
-	
-<body>
-	<nav id="top_menu">
-		<ul>
 
-		</ul>
-	</nav>
+get_header('Bookie - Sign Up!');
+
+?>
 	
 <div id="big_wrapper"> 
 	<header id="top_header">
@@ -79,9 +69,6 @@ session_destroy();
 		</div>		
 	</section>
 	</div>
-	<footer id="the_footer">
-		Copyright Team Delta 2013
-	</footer>
 </div> 
-</body>			
-</html>
+
+<?php get_footer(); ?>

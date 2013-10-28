@@ -1,6 +1,3 @@
-<!-- Group 8 
-August 15 2013 
-Project 60-334 -->
 <?php
 $DB_FIRST_ADMIN_ONLY=TRUE;
 

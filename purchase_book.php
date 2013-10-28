@@ -1,11 +1,12 @@
-<html>
-<head> 
-	<title> U of W Search Results</title>
-</head>
+<?php
+include_once 'lib.php';
+get_header('U of W Search Results');
 
-<body>
-	<h1>Search Results</h1>
-	<?php	
+// Content
+show_message(); // Error handling
+
+echo "<h1>Search Results</h1>";
+
 		$searchtype = $_POST['searchtype'];
 		$searchterm = trim($_POST['searchterm']);
 		
@@ -19,7 +20,7 @@
 			$searchtype =addslashes($searchtype);
 		}
 		echo "you are looking for $searchterm";
-		
+		// TODO:  consolidate DB Credentials
                 $db = new mysqli('localhost', 'alas', 'ericalas', 'alas_311');
 
 if($db->connect_errno > 0){
@@ -62,10 +63,10 @@ if(!$result = $db->query($query)){
 		
 		  $result->free();
 		  $db->close();
-	
-	?>
-	
-	<h1>Purchase a book?</h1>
+
+echo <<<WACKO
+
+	<h1>Purchase a book? </h1>
 	<!-- will there be a shopping cart? a wish/watch list?-->
 	<form action="purchaseform.php" method="post">
 		<br/>
@@ -75,6 +76,8 @@ if(!$result = $db->query($query)){
 		<input type="submit" name="submit" value="Search"/>
 	</form>
 
-	
-</body>
-</html>
+WACKO;
+//*/	
+
+get_footer();
+?>
